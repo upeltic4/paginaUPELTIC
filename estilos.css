@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+
+h1{font-size: 3em;}
+h2 { font-size: 2.7em;}
+h3 {font-size: 2em;}
+p {font-size: 1.25em;}
+ul {list-style: none;}
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0%;
+    background-color: azure
+}
+
+header{ 
+    background-color:rgb(255, 255, 255) ;
+}
+header .logo{
+    margin: 0%;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(2, 2, 31);
+    font-size: 1.6em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(52, 88, 207);
+}
+header a:hover{
+    color: rgb(10, 10, 10);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-color: rgb(50, 181, 224);
+    background-image:url(obra8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#elcuento{
+    color: rgb(13, 14, 14);
+}
+#elcuento .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas{
+    background-color: rgb(72, 118, 124);
+    color: aliceblue;
+    padding: 100px 5px;
+}
+#caracteristicas .container{
+    text-align:center
+}
+#caracteristicas h2{
+    margin-top: 0;
+    font-size: 3em;
+}
+#caracteristicas .cart{
+    color: black;
+border-radius: 15px;
+margin: 20px 10px;
+padding: 90px;
+}
+
+.cart:nth-child(2){
+    background-image: url(obra9.png);
+    
+
+}
+.cart:nth-child(3){background-image: url(obra1.jpg);}
+.cart:nth-child(4){background-image: url(obra2.jpg);}
+
+#alumnos .container{
+    text-align: center;}
+#alumnos h3{
+    margin-left: 10px;
+    text-align: left;
+}
+#alumnos li{
+    margin: 10px 5px;
+    font-weight: bold;
+    text-align: right;
+}
+
+footer{
+    background-color: rgb(187, 235, 235);
+}
+footer p{
+    margin: 0;
+    color: rgb(14, 75, 67);
+}
+footer .container{
+height: 50px;
+display: flex;
+justify-content:right;
+margin-right: 10px;
+}
+
+@media (min-width: 720px){
+header{
+    position: fixed;
+    width: 100%;
+}
+
+header .container{
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+#elcuento .container{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#elcuento .texto{
+width: 50%;
+max-width: 600px;
+text-align: initial;
+padding: 0px 30px;
+display: flex;
+align-items:center ;
+flex-direction: column;
+}
+#elcuento h2{
+    margin-top: 0px;
+}
+#elcuento p{
+    text-align: justify;
+}
+#elcuento .img-container{
+    background-image: url(obra4.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+}
+
+
+}
